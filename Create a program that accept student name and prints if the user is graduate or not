@@ -1,0 +1,6 @@
+Graduate = ['Batool', 'Reem', 'Leen', 'Joud', 'Sami']
+name = input('Enter student name: ')
+if name in Graduate:
+   print('Graduated')
+else:
+    print ('Not Graduated')
