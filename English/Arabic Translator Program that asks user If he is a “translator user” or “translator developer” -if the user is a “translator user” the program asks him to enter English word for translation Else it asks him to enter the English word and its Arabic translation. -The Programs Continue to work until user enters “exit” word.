@@ -1,0 +1,29 @@
+dico = {"House":"منزل", "Apple":"تفاحة", "Tree":"شجرة", "Horse":"حصان", "Yellow":"أصفر"}
+def traduire(key):
+   if key in dico:
+       print (dico.get(key))
+while (1):
+ developer = 1
+ translator = 0
+ user =  input("If you are Developer enter D, If you are Translator enter T: ")
+ if user == 'D':
+   print ("Please Enter New Words")
+   Eng = input ("Enter The English Word: ")
+   Arb = input ("Enter The Arabic Word: ")
+   if Eng == "Exit" :
+     break
+   else :
+     dico[Eng] = Arb
+     continue
+ elif user == 'T':
+   Trans = input ("Please enter a word in English to translate: ")
+   if Trans == "Exit" :
+     break
+   else:
+     traduire (Trans)
+     continue
+ elif user == "Exit" :
+   break
+ else :
+   print ("Wrong Input")
+   break
